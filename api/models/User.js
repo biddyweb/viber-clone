@@ -27,7 +27,7 @@ module.exports = {
   beforeCreate: function (values, cb) {
     User.count(function(err,num){
       values.sip = (num + 1 + 10000) + '@104.236.124.124';
-      values.chat = 'user' + (num + 1)  + '@chat-server.p1.im';
+      values.chat = 'user' + (num + 1)  + '@104.236.124.124';
       values.code = 1234;
       cb();
     });
